@@ -41,11 +41,6 @@ this.changeMusic();
 		that.changeMusic();
 		return false;
 	});
-
-	this.$.music.bind('ended', function(){
-		that.next();
-	});
-	
 $(".music").bind('playing', function() {
 	$(".load").removeClass("loading");
 });
