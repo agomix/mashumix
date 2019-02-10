@@ -37,6 +37,7 @@ body {
 .tracks {
     position: relative;
 	clear: both;
+	max-width: 700px;
 }
 .track {
     height: 60px;
@@ -62,7 +63,7 @@ body {
 	padding-top: 13px;
 }
 .track .song {
-    width: calc(100% - 28%);
+    width: calc(100% - 24%);
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -85,16 +86,14 @@ body {
 .track .number {
     width: 10%;
     box-sizing: border-box;
-    padding: 0 15px;
     text-align: center;
     line-height: 60px;
     color: #bbbbbb;
 	border-right: 2px solid #313131;
 }
 .track .time {
-    width: 16%;
+    width: 13%;
     box-sizing: border-box;
-    padding: 0 15px;
     text-align: center;
     line-height: 60px;
 	float: right;
