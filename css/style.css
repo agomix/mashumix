@@ -30,6 +30,10 @@ body {
 #content {
 	display: none;
 }
+.hidden {
+	visibility: hidden;
+	position: absolute;
+}
 .tracks {
     position: relative;
 	clear: both;
