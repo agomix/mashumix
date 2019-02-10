@@ -37,25 +37,23 @@ body {
 .tracks {
     position: relative;
 	clear: both;
-	background: #000000;
 }
 .track {
     height: 60px;
     box-sizing: border-box;
 	background: #212121;
-	border-bottom: 1px solid #313131;
+	border-bottom: 2px solid #313131;
 }
 .track.on {
 	background: #313131;
 }
 #cover {
-	padding: 40px 30px 0px 30px;
-	max-width: 300px;
+	padding-top: 40px;
+	width: 300px;
     margin: auto;
 }
 .cover {
 	width: 100%;
-	max-width: 300px;
 }
 .song, .number, .time {
 	float: left;
@@ -70,7 +68,7 @@ body {
     text-overflow: ellipsis;
     font-family: 'CircularBlack', sans-serif;
     font-size: 16px;
-    padding: 11px 10px 11px 0px;
+    padding: 11px 10px 11px 15px;
     box-sizing: border-box;
 }
 .track .song .artist {
@@ -85,12 +83,13 @@ body {
     text-overflow: ellipsis;
 }
 .track .number {
-    width: 12%;
+    width: 10%;
     box-sizing: border-box;
     padding: 0 15px;
     text-align: center;
     line-height: 60px;
     color: #bbbbbb;
+	border-right: 2px solid #313131;
 }
 .track .time {
     width: 16%;
@@ -101,17 +100,22 @@ body {
 	float: right;
     color: #bbbbbb;
 	font-size: 14px;
+	border-left: 2px solid #313131;
 }
+.track.three {border: none;}
 #download {
     text-align: center;
     padding: 15px;
     letter-spacing: 2px;
-    margin: -5px 30px 40px 30px;
+    margin: auto;
+	margin-top: -5px;
+    margin-bottom: 40px;
     background: #24cf5f;
 	position: relative;
-	max-width: 300px;
+	width: 300px;
     box-sizing: border-box;
     font-family: 'CircularBook', sans-serif;
+	z-index: 1;
 }
 #download:after {
 	content: '';
@@ -124,67 +128,72 @@ body {
 }
 #footer {
     height: 104px;
-    background: #111111;
-    padding: 40px 10px;
+    background: #e8e8e8;
+    padding: 50px 0;
     margin-top: 40px;
 }
 .footer {
     height: 100px;
-    border: 2px solid #bbbbbb;
+    width: 300px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
     font-family: 'Fjalla One', sans-serif;
     font-size: 13px;
 	text-transform: uppercase;
 	max-width: 850px;
     margin: auto;
 }
+.footer, .footer a {
+	color: #615b5b;
+}
 #logo {
     background: url(../img/logo.png) no-repeat;
-    background-size: 75px;
+    background-size: 70px;
     background-position: center;
-    width: 30%;
+    width: 25%;
     height: 100px;
-    border-right: 2px solid #bbbbbb;
+    border-right: 2px solid;
     float: left;
     box-sizing: border-box;
 }
 #where {
     float: left;
-    width: 70%;
-    border-bottom: 2px solid #bbbbbb;
+    width: 75%;
+    border-bottom: 2px solid;
     box-sizing: border-box;
     height: 50px;
     line-height: 50px;
 }
-.youtube {
+.youtube, .spotify {
     float: left;
     text-align: center;
-    width: 50%;
+    width: 35%;
     box-sizing: border-box;
-    border-right: 1px solid #bbbbbb;
+	margin-top: -1px;
+}
+.youtube {
+    border-right: 1px solid;
 }
 .spotify {
-    float: right;
-    text-align: center;
-    width: 50%;
-    border-left: 1px solid #bbbbbb;
-    box-sizing: border-box;
+    border-left: 1px solid;
+    border-right: 1px solid;
 }
 #powered {
     line-height: 50px;
 }
 .by {
     float: left;
-    width: 55%;
+    width: 75%;
     box-sizing: border-box;
-    border-right: 1px solid #bbbbbb;
-    text-align: center;
+    text-align: right;
 }
 .year {
     float: right;
     text-align: center;
-    width: 15%;
+    width: 30%;
     box-sizing: border-box;
-    border-left: 1px solid #bbbbbb;
+    border-left: 1px solid;
+    margin-top: -1px;
 }
 .controls {
     width: 300px;
@@ -265,11 +274,11 @@ body {
 	        transition: transform 0.2s;
 }
 .controls .load.loading {
-    border: 5px solid;
+    border: 2px solid;
     border-radius: 50%;
-    border-top: 5px solid transparent;
-    width: 30px;
-    height: 30px;
+    border-top: 2px solid transparent;
+    width: 34px;
+    height: 34px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 1s linear infinite;
     left: 0;
@@ -287,4 +296,14 @@ body {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+/* media */
+@media (min-width: 360px) {
+	.footer {
+		width: auto;
+	}
+	#footer {
+		padding: 50px 30px;
+	}
 }
