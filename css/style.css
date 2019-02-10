@@ -38,6 +38,7 @@ body {
     position: relative;
 	clear: both;
 	max-width: 700px;
+	margin: auto;
 }
 .track {
     height: 60px;
