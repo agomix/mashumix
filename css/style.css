@@ -45,6 +45,7 @@ body {
     box-sizing: border-box;
 	background: #212121;
 	border-bottom: 2px solid #313131;
+	cursor: pointer;
 }
 .track.on {
 	background: #313131;
@@ -116,6 +117,7 @@ body {
     box-sizing: border-box;
     font-family: 'CircularBook', sans-serif;
 	z-index: 1;
+	cursor: pointer;
 }
 #download:after {
 	content: '';
@@ -170,6 +172,7 @@ body {
     width: 35%;
     box-sizing: border-box;
 	margin-top: -1px;
+	cursor: pointer;
 }
 .youtube {
     border-right: 1px solid;
@@ -194,6 +197,7 @@ body {
     box-sizing: border-box;
     border-left: 1px solid;
     margin-top: -1px;
+	cursor: pointer;
 }
 .controls {
     width: 300px;
@@ -224,6 +228,7 @@ body {
     border-radius: 50%;
     font-size: 30px;
 	transition: 0.2s;
+	cursor: pointer;
 }
 .play.yes {
     width: 50px;
