@@ -45,9 +45,9 @@
 font-style: normal;
 }
 
-.icon-youtube:before { content: "\f100"; margin-right: 10px; }
-.icon-spotify:before { content: "\f101"; margin-right: 10px; }
-.icon-email:before { content: "\f102"; font-size: 22px; }
+.icon-youtube:before { content: "\f100"; margin-right: 5px; font-size: 15px; }
+.icon-spotify:before { content: "\f101"; margin-right: 5px; font-size: 14px; }
+.icon-email:before { content: "\f102"; margin-right: 5px; font-size: 14px; }
 .icon-play:before { content: "\f103"; margin-left: 6px; }
 .icon-pause:before { content: "\f104"; margin-left: 0; }
 
