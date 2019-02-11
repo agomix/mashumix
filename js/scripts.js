@@ -1,6 +1,8 @@
 $(window).load(function(){
 	$('#loader').fadeOut(500);
 	$('#content').fadeIn(500);
+	$("meta[name='theme-color']").attr("content", "#cd668c");
+	$("meta[name='msapplication-TileColor']").attr("content", "#cd668c");
 });
 $(".track.one").click(function(){
 	$(".cover").attr("src","img/cover/1.png");
