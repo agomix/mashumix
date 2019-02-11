@@ -31,7 +31,9 @@ body {
 }
 .hidden {
 	visibility: hidden;
-	position: absolute;
+    position: absolute;
+    width: 300px;
+    top: 40px;
 }
 .tracks {
     position: relative;
