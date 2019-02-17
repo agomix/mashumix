@@ -4,8 +4,10 @@
 	<meta charset="utf-8">
 	<title>AGO music | Songs</title>
 	
-	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/logo.css">
 	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 	
 	<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
 	<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
@@ -21,11 +23,9 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
 	<link rel="manifest" href="img/favicon/manifest.json">
-	<meta name="msapplication-TileColor" content="#313131">
+	<meta name="msapplication-TileColor" content="#212121">
 	<meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-	<meta name="theme-color" content="#313131">
-	
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
+	<meta name="theme-color" content="#212121">
 
 	<meta property="og:title" content="AGO music | Songs">
 	<meta property="og:description" content="Here you can download the sounds mixed by AGO: "Chandelier" vs. "Kingdown Come" |"Bad Liar" vs. "Nervous" | "Hear Me Now" vs. "Music Sounds Better With U"">
@@ -47,64 +47,174 @@
 <body>
 
 <div id="loader">
-	<div class="loader"></div>
+<div id="logo">
+	<div class="ago">
+		<div class="a">
+			<div class="center"></div>
+			<div class="right"></div>
+		</div>
+		<div class="g">
+			<div class="left"></div>
+			<div class="top"></div>
+			<div class="center"></div>
+			<div class="right"></div>
+		</div>
+		<div class="o">
+			<div class="left"></div>
+		</div>
+	</div>
+	<div class="space-a"></div>
+	<div class="space-left"></div>
+	<div class="space-right"></div>
+</div>
+
+<div class="loader">
+	<div class="spinner"></div>
+	<div id="music">
+		<div class="m">
+			<div class="left"></div>
+			<div class="top"></div>
+			<div class="center"></div>
+			<div class="right"></div>
+		</div>
+		<div class="u">
+			<div class="left"></div>
+			<div class="right"></div>
+			<div class="bottom"></div>
+		</div>
+		<div class="s">
+			<div class="top"></div>
+			<div class="left"></div>
+			<div class="center"></div>
+			<div class="right"></div>
+			<div class="bottom"></div>
+		</div>
+		<div class="i">
+			<div class="left"></div>
+		</div>
+		<div class="c">
+			<div class="top"></div>
+			<div class="left"></div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+</div>
 </div>
 
 <div id="content">
+<div id="main-screen">
+<div id="main-area">
 
-<div class="cover-download">
-	<div id="cover">
-		<img src="img/cover/1.png" class="cover">
-		<img src="img/cover/2.png" class="hidden">
-		<img src="img/cover/3.png" class="hidden">
+	<div class="cover-download">
+			<img src="img/cover/1.png" class="cover one center">
+			<img src="img/cover/2.png" class="cover two">
+			<img src="img/cover/3.png" class="cover three">
+		<div class="seek-bar"><div class="progress-bar"></div></div>
+		<div class="controls">
+			<div class="play icon-play">
+				<div class="load"></div>
+			</div>
+		</div>
+		<a href="https://docs.google.com/uc?export=download&id=1G8bj7eBGgkMedmRR7PrKtNlR311tzeON" class="download">
+			<div id="download">DOWNLOAD THIS SONG</div>
+		</a>
 	</div>
-	<a href="https://docs.google.com/uc?export=download&id=1G8bj7eBGgkMedmRR7PrKtNlR311tzeON" class="download">
-		<div id="download">DOWNLOAD THIS SONG</div>
-	</a>
+
+	<audio class="music" preload="auto">
+	<source src="https://agomix.github.io/songs/song/0.mp3" type="audio/mpeg">
+	<source src="song/1.mp3" type="audio/mpeg">
+	<source src="song/2.mp3" type="audio/mpeg">
+	</audio>
+
+	<div class="tracks">
+		<div class="track on one">
+			<div class="number">1</div>
+			<div class="song">Chandelier <span class="artist">by Sia</span>
+				<div class="mashumix">(vs Demi Lovato - Kingdown Come)</div>
+			</div>
+			<div class="time">2:18</div>
+		</div>
+		
+		<div class="track two">
+			<div class="number">2</div>
+			<div class="song">Bad Liar <span class="artist">by Selena Gomez</span>
+				<div class="mashumix">(vs Shawn Mendes - Nervous)</div>
+			</div>
+			<div class="time">2:46</div>
+		</div>
+
+		<div class="track three">
+			<div class="number">3</div>
+			<div class="song">Hear Me Now <span class="artist">by Alok, Bruno Martini feat. Zeeba</span>
+				<div class="mashumix">(vs Big Time Rush - Music Sounds Better With U)</div>
+			</div>
+			<div class="time">3:01</div>
+		</div>
+	</div>
 </div>
-
-<div class="seek-bar"><div class="progress-bar"></div></div>
-<div class="controls">
-	<div class="play icon-play">
-		<div class="load"></div>
-	</div>
-</div>
-
-<audio class="music" preload="auto">
-<source src="https://agomix.github.io/songs/song/0.mp3" type="audio/mpeg">
-<source src="song/1.mp3" type="audio/mpeg">
-<source src="song/2.mp3" type="audio/mpeg">
-</audio>
-
-<div class="tracks">
-	<div class="track on one">
-		<div class="number">1</div>
-		<div class="song">Chandelier <span class="artist">by Sia</span>
-			<div class="mashumix">(vs Demi Lovato - Kingdown Come)</div>
-		</div>
-		<div class="time">2:18</div>
-	</div>
-	
-	<div class="track two">
-		<div class="number">2</div>
-		<div class="song">Bad Liar <span class="artist">by Selena Gomez</span>
-			<div class="mashumix">(vs Shawn Mendes - Nervous)</div>
-		</div>
-		<div class="time">2:46</div>
-	</div>
-
-	<div class="track three">
-		<div class="number">3</div>
-		<div class="song">Hear Me Now <span class="artist">by Alok, Bruno Martini feat. Zeeba</span>
-			<div class="mashumix">(vs Big Time Rush - Music Sounds Better With U)</div>
-		</div>
-		<div class="time">3:01</div>
-	</div>
 </div>
 
 <div id="footer">
 <div class="footer">
-	<div id="logo"></div>
+	<div id="logo">
+		<div class="logo">
+			<div class="l"></div>
+			<div class="l"></div>
+			<div class="ago">
+				<div class="a">
+					<div class="left"></div>
+					<div class="top"></div>
+					<div class="center"></div>
+					<div class="right"></div>
+				</div>
+				<div class="g">
+					<div class="left"></div>
+					<div class="top"></div>
+					<div class="center"></div>
+					<div class="right"></div>
+					<div class="bottom"></div>
+				</div>
+				<div class="o">
+					<div class="left"></div>
+					<div class="top"></div>
+					<div class="right"></div>
+					<div class="center"></div>
+					<div class="bottom"></div>
+				</div>
+			</div>
+			<div class="music">
+				<div class="m">
+					<div class="left"></div>
+					<div class="top"></div>
+					<div class="center"></div>
+					<div class="right"></div>
+				</div>
+				<div class="u">
+					<div class="left"></div>
+					<div class="right"></div>
+					<div class="bottom"></div>
+				</div>
+				<div class="s">
+					<div class="top"></div>
+					<div class="left"></div>
+					<div class="center"></div>
+					<div class="right"></div>
+					<div class="bottom"></div>
+				</div>
+				<div class="i">
+					<div class="left"></div>
+				</div>
+				<div class="c">
+					<div class="top"></div>
+					<div class="left"></div>
+					<div class="bottom"></div>
+				</div>
+			
+			</div>
+			<div class="l right-left"></div>
+			<div class="l right-right"></div>
+		</div>
+	</div>
 	<div id="where">
 		<a href="https://www.youtube.com/playlist?list=PL0gvMkinl22XvVMxU0DBKpXW-iALpYDhO" target="_blank"><div class="youtube icon-youtube">YouTube</div></a>
 		<a href="https://open.spotify.com/user/21xhy6juzh4ygfqnxihxyxb2i/playlist/1wsS1PYfZvRuakoVKSgUl7?si=D0-Ev_ZQTpWp1sWBAgaAUg" target="_blank"><div class="spotify icon-spotify">Spotify</div></a>
