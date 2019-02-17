@@ -1,0 +1,524 @@
+/* logo loader */
+
+#loader {
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    cursor: wait;
+}
+#loader #logo, #loader .center, #loader .left, #loader .right, #loader .top, #loader .bottom, #loader .i {
+    background: #bbbbbb;
+    position: absolute;
+}
+#loader, #loader .space-left, #loader .space-right, #loader .space-a, #loader .ago, #loader #music {
+    background: #212121;
+}
+#loader #logo {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    padding: 5px;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+#loader .ago {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    margin: auto;
+    left: 0px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+#loader .a, #loader .g, #loader .o {
+	position: relative;
+    height: 100%;
+}
+#loader .a {
+    width: 24%;
+    float: left;
+}
+#loader .a .center {
+    width: 100%;
+    height: 9%;
+    top: 32%;
+}
+#loader .a .right {
+    height: 100%;
+    width: 34%;
+    right: 0;
+}
+#loader .g {
+    width: 40%;
+    float: left;
+    margin: 0 6%;
+}
+#loader .g .left {
+    height: 100%;
+    width: 21.5%;
+}
+#loader .g .top {
+    width: 21.5%;
+    right: 0;
+    height: 40%;
+}
+#loader .g .center {
+    right: 0;
+    height: 9%;
+    width: 61%;
+    bottom: 22%;
+}
+#loader .g .right {
+    width: 21.5%;
+    right: 0;
+    height: 35%;
+    bottom: 0;
+}
+#loader .o {
+    width: 24%;
+    float: right;
+}
+#loader .o .left {
+    height: 100%;
+    width: 34%;
+}
+#loader .space-left, #loader .space-right {
+    height: 100%;
+    width: 6%;
+    position: absolute;
+    top: 0;
+}
+#loader .space-left {
+    left: 27%;
+}
+#loader .space-right {
+    right: 27%;
+}
+#loader .space-a {
+    height: 35%;
+    width: 10%;
+    position: absolute;
+    bottom: 0;
+    left: 10.6%;
+}
+
+#loader #music {
+    height: 13%;
+    width: 73%;
+    padding: 4% 3%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    top: 7%;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+#loader #music .m {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#loader #music .m .left {
+    height: 100%;
+    width: 22%;
+}
+#loader #music .m .top {
+    width: 100%;
+    height: 22%;
+    position: absolute;
+    top: 0;
+}
+#loader #music .m .center {
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#loader #music .m .right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 22%;
+    top: 0;
+}
+#loader #music .u {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#loader #music .u .left {
+    height: 100%;
+    width: 22%;
+}
+#loader #music .u .right {
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+#loader #music .u .bottom {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+}
+#loader #music .s {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#loader #music .s .top {
+    width: 100%;
+    height: 22%;
+}
+#loader #music .s .left {
+    position: absolute;
+    width: 22%;
+    height: 50%;
+    top: 0;
+}
+#loader #music .s .center {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+#loader #music .s .right {
+    position: absolute;
+    width: 22%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+#loader #music .s .bottom {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+}
+#loader #music .i {
+    height: 100%;
+    width: 4%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#loader #music .c {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+}
+#loader #music .c .top {
+    width: 100%;
+    height: 22%;
+}
+#loader #music .c .left {
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    top: 0;
+}
+#loader #music .c .bottom {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+}
+
+.loader {
+    width: 105px;
+    height: 105px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+#loader .spinner {
+    border: 4px solid #bbbbbb;
+    border-radius: 50%;
+    border-top: 4px solid transparent;
+    width: 92px;
+    height: 92px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 1s linear infinite;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* logo footer */
+
+#footer .logo {
+	width: 100%;
+	height: 100%;
+    position: relative;
+}
+#footer .l, #footer .left, #footer .right, #footer .center, #footer .bottom, #footer .top, #footer .i {
+	background-color: #615b5b;
+}
+#footer .l, #footer .ago, #footer .ago .a, #footer .ago .a .left, #footer .ago .a .top, #footer .ago .g, #footer .ago .g .left, #footer .ago .g .top, #footer .ago .o, #footer .ago .o .left, #footer .ago .o .top {
+    float: left;
+}
+#footer .ago .a .right, #footer .ago .g .right, #footer .ago .g .bottom, #footer .ago .o .right, #footer .ago .o .bottom {
+    float: right;
+}
+#footer .ago .o .bottom, #footer .ago .a .top, #footer .ago .a .center, #footer .ago .g .top, #footer .ago .g .center, #footer .ago .g .bottom, #footer .ago .o .top {
+    height: 5%;
+}
+#footer .l {
+    height: 100%;
+    width: 5%;
+    margin-right: 5%;
+}
+#footer .ago {
+    width: 60%;
+    height: 82%;
+}
+#footer .ago .a {
+    height: 100%;
+    width: 28%;
+    overflow: hidden;
+    margin-right: 8%;
+	position: relative;
+}
+#footer .ago .a .left {
+    height: 100%;
+    width: 24%;
+}
+#footer .ago .a .top {
+    width: 76%;
+}
+#footer .ago .a .center {
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+#footer .ago .a .right {
+    width: 45%;
+    height: 95%;
+}
+#footer .ago .g {
+    height: 100%;
+    width: 28%;
+    overflow: hidden;
+    margin-right: 8%;
+	position: relative;
+}
+#footer .ago .g .left {
+    height: 95%;
+    width: 40%;
+}
+#footer .ago .g .top {
+    width: 60%;
+}
+#footer .ago .g .center {
+    width: 41%;
+    position: absolute;
+    top: 45%;
+    right: 0;
+}
+#footer .ago .g .right {
+	width: 23%;
+    height: 54%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+#footer .ago .g .bottom {
+    width: 100%;
+}
+#footer .ago .o {
+    height: 100%;
+    width: 28%;
+    overflow: hidden;
+}
+#footer .ago .o .left {
+    height: 95%;
+    width: 54%;
+}
+#footer .ago .o .top {
+    width: 46%;
+}
+#footer .ago .o .right {
+    width: 15%;
+    height: 90%;
+}
+#footer .ago .o .bottom {
+    width: 100%;
+}
+#footer .l.right-left {
+    margin-left: 5%;
+}
+#footer .l.right-right {
+    margin: 0;
+}
+#footer .music {
+    height: 15%;
+    width: 60%;
+    overflow: hidden;
+    position: absolute;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+#footer .music .m {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#footer .music .m .left {
+    height: 100%;
+    width: 22%;
+}
+#footer .music .m .top {
+    width: 100%;
+    height: 22%;
+    position: absolute;
+    top: 0;
+}
+#footer .music .m .center {
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#footer .music .m .right {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 22%;
+    top: 0;
+}
+#footer .music .u {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#footer .music .u .left {
+    height: 100%;
+    width: 22%;
+}
+#footer .music .u .right {
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+#footer .music .u .bottom {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+}
+#footer .music .s {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#footer .music .s .top {
+    width: 100%;
+    height: 22%;
+}
+#footer .music .s .left {
+    position: absolute;
+    width: 22%;
+    height: 50%;
+    top: 0;
+}
+#footer .music .s .center {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+#footer .music .s .right {
+    position: absolute;
+    width: 22%;
+    height: 50%;
+    bottom: 0;
+    right: 0;
+}
+#footer .music .s .bottom {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+}
+#footer .music .i {
+    height: 100%;
+    width: 4%;
+    position: relative;
+    float: left;
+    margin-right: 6%;
+}
+#footer .music .c {
+    height: 100%;
+    width: 18%;
+    position: relative;
+    float: left;
+}
+#footer .music .c .top {
+    width: 100%;
+    height: 22%;
+}
+#footer .music .c .left {
+    position: absolute;
+    width: 22%;
+    height: 100%;
+    top: 0;
+}
+#footer .music .c .bottom {
+    position: absolute;
+    width: 100%;
+    height: 22%;
+    bottom: 0;
+}
