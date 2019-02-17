@@ -41,6 +41,7 @@ this.changeMusic();
 		that.changeMusic();
 		return false;
 	});
+	
 $(".music").bind('playing', function() {
 	$(".load").removeClass("loading");
 });
@@ -79,7 +80,7 @@ Player.prototype.go_to = function( index, currentIndex )
 		
 		this.$.track[currentIndex].classList.remove('ativa');
 		this.$.track[index].classList.add('ativa');
-		this.$.music[0].setAttribute('src', 'song/' + index + '.mp3');
+		this.$.music[0].setAttribute('src', 'http://agomix.github.io/songs/song/' + index + '.mp3');
 		
 		this.changeMusic();
 		this.index = index;
@@ -94,14 +95,14 @@ Player.prototype.changeMusic = function()
 		this.$.play[0].classList.add('icon-pause');
 		$(".next, .previous").show();
 		$(".play").addClass("yes");
-		$(".controls").removeClass("bg");
+		$(".controls").addClass("bg");
 	}
 	else {
 		this.$.play[0].classList.remove('icon-pause');
 		this.$.load[0].classList.remove('loading');
 		$(".next, .previous").hide();
 		$(".play").removeClass("yes");
-		$(".controls").addClass("bg");
+		$(".controls").removeClass("bg");
 	$(".play").removeClass("color");
 		
 		this.$.music[0].pause();
