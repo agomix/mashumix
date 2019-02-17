@@ -266,7 +266,8 @@ body {
     margin: auto;
     text-align: center;
     line-height: 75px;
-    border: 3px solid #ffffff;
+    border: 3px solid;
+    border-color: transparent;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     border-radius: 50%;
@@ -324,9 +325,9 @@ body {
 	        transition: transform 0.2s;
 }
 .controls .load.loading {
-    border: 3px solid transparent;
+	border: 3px solid #ffffff;
     border-radius: 50%;
-    border-top: 3px solid #212121;
+    border-top: 3px solid transparent;
     width: 75px;
     height: 75px;
     -webkit-animation: spin 2s linear infinite;
