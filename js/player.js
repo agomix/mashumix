@@ -50,6 +50,7 @@ this.changeMusic();
 	
 $(".music").bind('playing', function() {
 	$(".load").removeClass("loading");
+	$(".play.yes").css("border-color", "#ffffff");
 });
 
 	window.setInterval(function () {
