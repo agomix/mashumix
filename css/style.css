@@ -324,14 +324,14 @@ body {
 	        transition: transform 0.2s;
 }
 .controls .load.loading {
-    border: 2px solid;
+    border: 3px solid transparent;
     border-radius: 50%;
-    border-top: 2px solid transparent;
-    width: 34px;
-    height: 34px;
+    border-top: 3px solid #212121;
+    width: 75px;
+    height: 75px;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 1s linear infinite;
-    left: 0;
+    left: -3px;
     right: 0;
     top: 0;
     bottom: 0;
