@@ -10,8 +10,10 @@ var Player = function ( $target )
 	this.$.progress_bar		= this.$.body.find('.progress-bar');
 	this.$.music			= this.$.body.find('.music');
 	this.$.track 			= this.$.body.find('.track');
+	this.$.cover 			= this.$.body.find('.cover');
 
 	this.count = this.$.track.length;
+	this.count = this.$.cover.length;
 	this.init_events();
 };
 
@@ -32,6 +34,10 @@ Player.prototype.init_events = function (){
 	});
 
 this.$.track.each(function (data) {
+$(this).on('click', function (){
+that.go_to( data, $carousel.index);
+});});
+this.$.cover.each(function (data) {
 $(this).on('click', function (){
 that.go_to( data, $carousel.index);
 });});
@@ -80,6 +86,8 @@ Player.prototype.go_to = function( index, currentIndex )
 		
 		this.$.track[currentIndex].classList.remove('ativa');
 		this.$.track[index].classList.add('ativa');
+		this.$.cover[currentIndex].classList.remove('ativa');
+		this.$.cover[index].classList.add('ativa');
 		this.$.music[0].setAttribute('src', 'http://agomix.github.io/songs/song/' + index + '.mp3');
 		
 		this.changeMusic();
