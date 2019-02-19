@@ -198,7 +198,7 @@ body {
     border-right: 2px solid;
     float: left;
     box-sizing: border-box;
-	padding: 18px 45px;
+	padding: 18px 55px;
 }
 #where {
     float: left;
@@ -345,17 +345,17 @@ body {
 
 @media (max-width: 820px) {
 	#footer #logo {
-		padding: 18px 35px;
+		padding: 18px 45px;
 	}
 }
 @media (max-width: 720px) {
 	#footer #logo {
-		padding: 18px 25px;
+		padding: 18px 35px;
 	}
 }
 @media (max-width: 620px) {
 	#footer #logo {
-		padding: 18px 15px;
+		padding: 18px 25px;
 	}
 }
 @media (max-width: 520px) {
